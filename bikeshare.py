@@ -3,25 +3,11 @@ import pandas as pd
 import numpy as np
 import calendar as cal
 import os
+import style
 
 
-# System call
-os.system("")
 
-# Class of different styles
-class Style():
-    BLACK = '\033[30m'
-    RED = '\033[31m'
-    GREEN = '\033[32m'
-    YELLOW = '\033[33m'
-    BLUE = '\033[34m'
-    MAGENTA = '\033[35m'
-    CYAN = '\033[36m'
-    WHITE = '\033[37m'
-    UNDERLINE = '\033[4m'
-    RESET = '\033[0m'
-
-print_style = Style()
+print_style = style.Style()
 
 
 CITY_DATA = { 'chicago': 'chicago.csv',
